@@ -2,7 +2,6 @@
 ActivityTracker
 Samantha Cook
 4/21/2023
-Python II
 '''
 
 import os
@@ -35,7 +34,7 @@ def create_account():
     Creates a new account if one does not exist If an account
     already exists, no account is created.
     '''
-    name = input('Enter the name you want associated'
+    name = input('Enter the name you want associated '
                 'with the account >> ').lower().strip()
     if os.path.exists(name + '.txt'):
         print('This username already exists.')
