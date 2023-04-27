@@ -66,6 +66,8 @@ def login():
         account_menu(name + '.txt')
     else:
         print('No account exists under that name!')
+
+
         
 def account_menu(file_name):
         '''
@@ -95,8 +97,6 @@ def account_menu(file_name):
             else:
                 print('Invaild option selected!')
         
-
-
 
 
 def log_activities(file_name):
@@ -158,5 +158,5 @@ def view_activities(file_name):
 
 #main
 main_menu()
-create_account()
+
 
