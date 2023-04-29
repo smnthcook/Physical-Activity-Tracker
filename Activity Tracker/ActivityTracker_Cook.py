@@ -108,8 +108,10 @@ def log_activities(file_name):
     while repeat == 'y':
         
         activity_name = input('Enter the name of the activity >> ')
-        hours = input('Enter the number of hours you did the activity >> ')
-        calories = input('Enter the number of calories the activity burns per hour >> ')
+        hours = input('Enter the number of hours you did the '
+                      'activity >> ')
+        calories = input('Enter the number of calories the activity'
+                         ' burns per hour >> ')
         file = open(file_name, 'a')
         file.write(activity_name + ', ' + hours + ', ' + calories + '\n')
         file.close()
@@ -134,7 +136,8 @@ def delete_activities(file_name):
             fields = entries[i].split(',')
             print(i + 1, '-', fields[0], 'for', fields[1], 'hours')
         print()
-        index = int(input("Which activity would you like to delete (enter a number) >> ")) - 1
+        index = int(input('Which activity would you like to delete '
+                          ' (enter a number) >> ')) - 1
         if index < len(entries):
             entries.pop(index)
             print("Activity successfully deleted!")
